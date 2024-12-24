@@ -1,0 +1,60 @@
+
+# Stock Price Prediction
+
+This project focuses on predicting stock prices using three approaches:
+1. Time Series Forecasting with ARIMA.
+2. Deep Learning with LSTM.
+3. Regression-based prediction.
+
+## Dataset
+The dataset used is historical stock price data for Apple Inc. (AAPL), sourced from Yahoo Finance using the `yfinance` library.
+
+### Features:
+- **Open, High, Low, Close**: Daily stock prices.
+- **Volume**: The number of shares traded each day.
+- **Moving Averages & Volatility**: Derived features for regression-based prediction.
+
+## Models Used
+### 1. ARIMA
+- **ARIMA (Auto-Regressive Integrated Moving Average)** is a time series forecasting model.
+- It models the stock price using historical trends and seasonality.
+- Forecasts are made for the next 30 days.
+
+### 2. LSTM
+- **Long Short-Term Memory (LSTM)** is a recurrent neural network suitable for sequence modeling.
+- Historical closing prices are used to predict future values.
+
+### 3. Linear Regression
+- Uses features like moving averages and volatility to predict stock prices.
+
+---
+
+## Results
+### ARIMA Forecast:
+- The ARIMA model provides stable forecasts based on historical data.
+- **Visualization**:
+![ARIMA Predictions](image1.png)
+
+### LSTM:
+- LSTM shows convergence during training, but the model predictions require additional tuning.
+- Training Loss: Gradual reduction over 10 epochs.
+- **Visualization**:
+![LSTM Predictions](image2.png)
+
+### Regression:
+- Linear regression provides predictions based on engineered features (e.g., moving averages).
+- RMSE: **0.00** (This result indicates scaling issues in the dataset that need correction).
+- **Visualization**:
+![Regression Predictions](image3.png)
+
+---
+
+## How to Run
+1. Clone this repository.
+2. Install the required libraries using `pip install -r requirements.txt`.
+3. Run the script `stock_price_prediction.py`.
+
+---
+
+## License
+This project is open-source and available under the MIT License.
