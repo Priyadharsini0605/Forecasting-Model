@@ -44,17 +44,4 @@ The dataset used is historical stock price data for Apple Inc. (AAPL), sourced f
 ### Regression:
 - Linear regression provides predictions based on engineered features (e.g., moving averages).
 - RMSE: **0.00** (This result indicates scaling issues in the dataset that need correction).
-- **Visualization**:
-![Regression Predictions](image3.png)
 
----
-
-## How to Run
-1. Clone this repository.
-2. Install the required libraries using `pip install -r requirements.txt`.
-3. Run the script `stock_price_prediction.py`.
-
----
-
-## License
-This project is open-source and available under the MIT License.
